@@ -1,0 +1,16 @@
+> cmd열기 
+> conda create -n 가상환경이름_env python=3.11
+> conda env list
+> conda activate 가상환경이름_env
+> pip install django
+> django-admin startproject 프로젝트명 .
+> python manage.py runserver
+
+
+python manage.py startapp 앱 만들기 
+
+admin 계정 만들기
+> python manage.py createsuperuser   관리자 계정 생성(이때 생성 안됨)
+> python manage.py makemigrations 마이그레이션 설계도 작성
+> python manage.py migrate   마이그레이션 적용
+> python manage.py createsuperuser 관리자 계정 다시 생성

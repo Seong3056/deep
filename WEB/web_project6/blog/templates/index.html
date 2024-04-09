@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<head>    
+    <h1>블로그 목록</h1> 
+</head>
+<body>
+    <div id="post-list">
+        {% for post in POSTS %}
+            <hr />
+            <h2>
+                <a href="/blog/{{post.id}}"> 제목 : {{ post.title }}</a> 
+            </h2>
+            <p>작성일자 : {{ post.created_at }}</p>
+            <p>내용 : {{ post.content }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
+
+
+

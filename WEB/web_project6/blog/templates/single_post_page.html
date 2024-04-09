@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ ID.title }} - Blog</title>
+    <a href="{% url 'blog:post_list' %}">목록</a> 
+</head>
+<body>
+    <h2>제목 : {{ ID.title }}</h2>
+    <p>작성일자 : {{ ID.created_at }}</p>
+    <p>내용 : {{ ID.content }}</p>
+</body>
+</html>

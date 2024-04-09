@@ -1,0 +1,9 @@
+bootstrap 적용
+
+- 앱 안에 static 폴더 생성 
+- static폴더 안에 bootstrap 폴더 생성
+- 그 안에 다운받은 bootstrap 자료 저장
+-<head> 태그 위에 {% load static %}  적용
+-<head> 태그 안에 
+  <link href="{% static 'bootstrap/bootstrap.min.css' %}" rel="stylesheet" type="text/css"> 적용
+  {% 'bootstrap/bootstrap.min.css' %} 부분은 예시
